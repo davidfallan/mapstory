@@ -74,7 +74,7 @@ services:
   maploom-build:
     build:
       context: ./deps/maploom
-    image: quay.io/mapstory/maploom-build:$TAG
+    image: quay.io/mapstory/maploom-build
     environment:
       GIT_DIR: /git
     volumes:
@@ -84,7 +84,7 @@ services:
   django-maploom-build:
     build:
       context: ./deps/django-maploom
-    image: quay.io/mapstory/django-maploom-build:$TAG
+    image: quay.io/mapstory/django-maploom-build
     environment:
       GIT_DIR: /git
     depends_on:
@@ -97,7 +97,7 @@ services:
   story-tools-build:
     build:
       context: ./deps/story-tools
-    image: quay.io/mapstory/story-tools-build:$TAG
+    image: quay.io/mapstory/story-tools-build
     environment:
       GIT_DIR: /git
     volumes:
