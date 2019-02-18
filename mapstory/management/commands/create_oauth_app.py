@@ -33,7 +33,7 @@ class Command(BaseCommand):
         parser.add_argument(
             '--redirect-uri',
             dest='redirect-uri',
-            default='https://docker',
+            default='http://davidfallanlinuxvm.uksouth.cloudapp.azure.com',
             help='redirect uri'
         )
 
